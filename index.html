@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RE-CONSTRUYE</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #6d552dce;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      background-color: #f1f1f1;
+      padding: 10px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    main {
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    footer {
+      background-color: #ddd;
+      text-align: center;
+      padding: 10px;
+    }
+    .card {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>RE-CONSTRUYE</h1>
+    <p>Marketplace de excedentes de construcción</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#catalogo">Catálogo</a>
+    <a href="#publicar">Publicar</a>
+    <a href="#chat">Chat</a>
+    <a href="#perfil">Mi cuenta</a>
+  </nav>
+
+  <main>
+    <section id="inicio">
+      <h2>Bienvenido a RE-CONSTRUYE</h2>
+      <p>Conecta compradores y vendedores de materiales de construcción excedentes. Reduce el desperdicio y promueve la economía circular.</p>
+    </section>
+
+    <section id="catalogo">
+      <h2>Catálogo de materiales</h2>
+      <div class="card">
+        <h3>Madera reciclada</h3>
+        <p>Ubicación: Bogotá</p>
+        <p>Precio: $50.000</p>
+      </div>
+      <div class="card">
+        <h3>Cerámicas excedentes</h3>
+        <p>Ubicación: Medellín</p>
+        <p>Precio: $30.000</p>
+      </div>
+    </section>
+
+    <section id="publicar">
+      <h2>Publicar material</h2>
+      <form>
+        <label>Nombre del material:<br /><input type="text" /></label><br /><br />
+        <label>Descripción:<br /><textarea></textarea></label><br /><br />
+        <label>Precio:<br /><input type="number" /></label><br /><br />
+        <label>Ubicación:<br /><input type="text" /></label><br /><br />
+        <label>Foto:<br /><input type="file" /></label><br /><br />
+        <button type="submit">Publicar</button>
+      </form>
+    </section>
+
+    <section id="chat">
+      <h2>Chat interno</h2>
+      <p>Funcionalidad de mensajería entre comprador y vendedor (demo visual).</p>
+      <div class="card">
+        <p><strong>Comprador:</strong> ¿Sigue disponible la madera?</p>
+        <p><strong>Vendedor:</strong> Sí, disponible. ¿Cuánta necesitas?</p>
+      </div>
+    </section>
+
+    <section id="perfil">
+      <h2>Mi cuenta</h2>
+      <p>Nombre: Juan Pérez</p>
+      <p>Rol: Vendedor</p>
+      <p>Mis publicaciones: 2 materiales</p>
+      <p>Calificación: ★★★★☆</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>RE-CONSTRUYE © 2025 | Contacto: info@reconstruye.com</p>
+  </footer>
+</body>
+</html>
