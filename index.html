@@ -1,117 +1,129 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RE-CONSTRUYE</title>
-  <style>
-    body {
-      font-family: 'Times New Roman', Times, serif, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #000000ce;
-      color: white;
-      padding: 10px;
-      text-align: center;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      background-color: #cececeb9;
-      padding: 10px;
-    }
-    nav a {
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
-    main {
-      padding: 20px;
-    }
-    section {
-      margin-bottom: 30px;
-    }
-    footer {
-      background-color: #ddd;
-      text-align: center;
-      padding: 10px;
-    }
-    .card {
-      border: 1px solid #ccc;
-      padding: 10px;
-      margin-bottom: 10px;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>RE-CONSTRUYE</h1>
-    <p>Marketplace de excedentes de construcción</p>
-  </header>
+<html>
+  <head>
+    <title>Compañía de construcción plantilla web | WIX</title>
+    
+    <!-- BEGIN SENTRY -->
+    <script id="sentry">
+  (function(c,u,v,n,p,e,z,A,w){function k(a){if(!x){x=!0;var l=u.getElementsByTagName(v)[0],d=u.createElement(v);d.src=A;d.crossorigin="anonymous";d.addEventListener("load",function(){try{c[n]=r;c[p]=t;var b=c[e],d=b.init;b.init=function(a){for(var b in a)Object.prototype.hasOwnProperty.call(a,b)&&(w[b]=a[b]);d(w)};B(a,b)}catch(g){console.error(g)}});l.parentNode.insertBefore(d,l)}}function B(a,l){try{for(var d=m.data,b=0;b<a.length;b++)if("function"===typeof a[b])a[b]();var e=!1,g=c.__SENTRY__;"undefined"!==
+  typeof g&&g.hub&&g.hub.getClient()&&(e=!0);g=!1;for(b=0;b<d.length;b++)if(d[b].f){g=!0;var f=d[b];!1===e&&"init"!==f.f&&l.init();e=!0;l[f.f].apply(l,f.a)}!1===e&&!1===g&&l.init();var h=c[n],k=c[p];for(b=0;b<d.length;b++)d[b].e&&h?h.apply(c,d[b].e):d[b].p&&k&&k.apply(c,[d[b].p])}catch(C){console.error(C)}}for(var f=!0,y=!1,q=0;q<document.scripts.length;q++)if(-1<document.scripts[q].src.indexOf(z)){f="no"!==document.scripts[q].getAttribute("data-lazy");break}var x=!1,h=[],m=function(a){(a.e||a.p||a.f&&
+  -1<a.f.indexOf("capture")||a.f&&-1<a.f.indexOf("showReportDialog"))&&f&&k(h);m.data.push(a)};m.data=[];c[e]=c[e]||{};c[e].onLoad=function(a){h.push(a);f&&!y||k(h)};c[e].forceLoad=function(){y=!0;f&&setTimeout(function(){k(h)})};"init addBreadcrumb captureMessage captureException captureEvent configureScope withScope showReportDialog".split(" ").forEach(function(a){c[e][a]=function(){m({f:a,a:arguments})}});var r=c[n];c[n]=function(a,e,d,b,f){m({e:[].slice.call(arguments)});r&&r.apply(c,arguments)};
+  var t=c[p];c[p]=function(a){m({p:a.reason});t&&t.apply(c,arguments)};f||setTimeout(function(){k(h)})})(window,document,"script","onerror","onunhandledrejection","Sentry","b4e7a2b423b54000ac2058644c76f718","https://static.parastorage.com/unpkg/@sentry/browser@5.27.4/build/bundle.min.js",{"dsn":"https://b4e7a2b423b54000ac2058644c76f718@sentry.wixpress.com/217"});
+  </script>
 
-  <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#catalogo">Catálogo</a>
-    <a href="#publicar">Publicar</a>
-    <a href="#chat">Chat</a>
-    <a href="#perfil">Mi cuenta</a>
-  </nav>
+    <script type="text/javascript">
+    window.Sentry.onLoad(function () {
+      window.Sentry.init({
+        "release": "marketing-template-viewer@1.2489.0",
+        "environment": "production",
+        "allowUrls": undefined,
+        "denyUrls": undefined
+});
+      window.Sentry.configureScope(function (scope) {
+        scope.setUser({
+          id: "708155105|c9a9c583-6764-4e53-aa5b-2b6a7223ed29",
+          clientId: "570d1259-0174-4de7-ae16-a0454e467770",
+        });
+        scope.setExtra("user.authenticated", true);
+        scope.setExtra("sessionId", "5b209cf6-7bd9-4116-b939-a25b17e19dfb");
+      });
+    });
+    </script>
+    <!-- END SENTRY -->
+    <script src="https://static.parastorage.com/polyfill/v3/polyfill.min.js?features=default,es6,es7,es2017,es2018,es2019,fetch&flags=gated&unknown=polyfill"></script>
 
-  <main>
-    <section id="inicio">
-      <h2>Bienvenido a RE-CONSTRUYE</h2>
-      <p>Conecta compradores y vendedores de materiales de construcción excedentes. Reduce el desperdicio y promueve la economía circular.</p>
-    </section>
+    <script>
+        window.onWixFedopsLoggerLoaded = function () {
+            window.fedopsLogger && window.fedopsLogger.reportAppLoadStarted('marketing-template-viewer');
+        }
+    </script>
+    <script onload="onWixFedopsLoggerLoaded()" src="//static.parastorage.com/unpkg/@wix/fedops-logger@5.511.0/dist/statics/fedops-logger.bundle.min.js" crossorigin></script>
 
-    <section id="catalogo">
-      <h2>Catálogo de materiales</h2>
-      <div class="card">
-        <h3>Madera reciclada</h3>
-        <p>Ubicación: Bogotá</p>
-        <p>Precio: $50.000</p>
-      </div>
-      <div class="card">
-        <h3>Cerámicas excedentes</h3>
-        <p>Ubicación: Medellín</p>
-        <p>Precio: $30.000</p>
-      </div>
-    </section>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    
 
-    <section id="publicar">
-      <h2>Publicar material</h2>
-      <form>
-        <label>Nombre del material:<br /><input type="text" /></label><br /><br />
-        <label>Descripción:<br /><textarea></textarea></label><br /><br />
-        <label>Precio:<br /><input type="number" /></label><br /><br />
-        <label>Ubicación:<br /><input type="text" /></label><br /><br />
-        <label>Foto:<br /><input type="file" /></label><br /><br />
-        <button type="submit">Publicar</button>
-      </form>
-    </section>
+    <link rel="icon" sizes="192x192" href="https://www.wix.com/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="https://www.wix.com/favicon.ico" type="image/x-icon"/>
+    <link rel="apple-touch-icon" href="https://www.wix.com/favicon.ico" type="image/x-icon"/>
 
-    <section id="chat">
-      <h2>Chat interno</h2>
-      <p>Funcionalidad de mensajería entre comprador y vendedor (demo visual).</p>
-      <div class="card">
-        <p><strong>Comprador:</strong> ¿Sigue disponible la madera?</p>
-        <p><strong>Vendedor:</strong> Sí, disponible. ¿Cuánta necesitas?</p>
-      </div>
-    </section>
+    <link rel="stylesheet" href="https://static.parastorage.com/services/third-party/fonts/Helvetica/fontFace.css">
+    <link rel="stylesheet" href="https://static.parastorage.com/unpkg/@wix/wix-fonts@1.14.0/madefor.min.css">
+    <link rel="stylesheet" href="https://static.parastorage.com/unpkg/@wix/wix-fonts@1.14.0/madeforDisplay.min.css">
+    <link rel="stylesheet" href="//static.parastorage.com/services/marketing-template-viewer/1.2489.0/app.min.css">
 
-    <section id="perfil">
-      <h2>Mi cuenta</h2>
-      <p>Nombre: Juan Pérez</p>
-      <p>Rol: Vendedor</p>
-      <p>Mis publicaciones: 2 materiales</p>
-      <p>Calificación: ★★★★☆</p>
-    </section>
-  </main>
+    <meta name="description" content="Construye una página web tan sólida como las construcciones a las que tu empresa se dedica día a día. Atractiva y profesional, posee un área para promover servicios y páginas de portafolio donde explicar proyectos concluidos y atraer nuevos clientes. Simplemente haz clic para comenzar a editarla y promueve tu presencia online hoy mismo. ">
+    <meta name="author" content="Wixpress">
+    <meta http-equiv="content-language" content="es"/>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
 
-  <footer>
-    <p>RE-CONSTRUYE © 2025 | Contacto: info@reconstruye.com</p>
-  </footer>
-</body>
+    <meta property="og:title" content="Compañía de construcción plantilla web | WIX"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://es.wix.com/website-template/view/html/1734"/>
+    <meta property="og:image" content="//static.wixstatic.com/media//templates/image/a47f03e7acc00f9a751b84ffaa23c5f779680c4df6e78b6b2c3c9b03dd67eb49.jpg"/>
+    <meta content="Wix" property="og:site_name">
+    <meta property="og:description" content="Construye una página web tan sólida como las construcciones a las que tu empresa se dedica día a día. Atractiva y profesional, posee un área para promover servicios y páginas de portafolio donde explicar proyectos concluidos y atraer nuevos clientes. Simplemente haz clic para comenzar a editarla y promueve tu presencia online hoy mismo. "/>
+    <meta property="fb:admins" content="731184828"/>
+    <meta name="fb:app_id" content="236335823061286"/>
+    <meta name="google-site-verification" content="QXhlrY-V2PWOmnGUb8no0L-fKzG48uJ5ozW0ukU7Rpo"/>
+
+    <link rel="canonical" href="https://es.wix.com/website-template/view/html/1734"/>
+
+    <link rel="alternate" hreflang="fr" href="https://fr.wix.com/website-template/view/html/1734"/>
+    <link rel="alternate" hreflang="pt" href="https://pt.wix.com/website-template/view/html/1734"/>
+    <link rel="alternate" hreflang="cs" href="https://cs.wix.com/website-template/view/html/1734"/>
+    <link rel="alternate" hreflang="it" href="https://it.wix.com/website-template/view/html/1734"/>
+    <link rel="alternate" hreflang="nl" href="https://nl.wix.com/website-template/view/html/1734"/>
+    <link rel="alternate" hreflang="ko" href="https://ko.wix.com/website-template/view/html/1734"/>
+    <link rel="alternate" hreflang="de" href="https://de.wix.com/website-template/view/html/1734"/>
+    <link rel="alternate" hreflang="ru" href="https://ru.wix.com/website-template/view/html/1734"/>
+    <link rel="alternate" hreflang="sv" href="https://sv.wix.com/website-template/view/html/1734"/>
+    <link rel="alternate" hreflang="tr" href="https://tr.wix.com/website-template/view/html/1734"/>
+    <link rel="alternate" hreflang="da" href="https://da.wix.com/website-template/view/html/1734"/>
+    <link rel="alternate" hreflang="en" href="https://www.wix.com/website-template/view/html/1734"/>
+    <link rel="alternate" hreflang="es" href="https://es.wix.com/website-template/view/html/1734"/>
+    <link rel="alternate" hreflang="hi" href="https://hi.wix.com/website-template/view/html/1734"/>
+    <link rel="alternate" hreflang="ja" href="https://ja.wix.com/website-template/view/html/1734"/>
+    <link rel="alternate" hreflang="no" href="https://no.wix.com/website-template/view/html/1734"/>
+    <link rel="alternate" hreflang="pl" href="https://pl.wix.com/website-template/view/html/1734"/>
+    <link rel="alternate" hreflang="vi" href="https://vi.wix.com/website-template/view/html/1734"/>
+    <link rel="alternate" hreflang="uk" href="https://uk.wix.com/website-template/view/html/1734"/>
+    <link rel="alternate" hreflang="zh" href="https://zh.wix.com/website-template/view/html/1734"/>
+    <link rel="alternate" hreflang="th" href="https://th.wix.com/website-template/view/html/1734"/>
+    <link rel="alternate" hreflang="x-default" href="https://www.wix.com/website-template/view/html/1734" />
+
+    
+  </head>
+  <body>
+    <script>
+        window.onWixRecorderLoaded = function () {
+            window.dispatchEvent(new Event('wixRecorderReady'));
+        };
+    </script>
+
+    <script async src="//static.parastorage.com/unpkg-semver/wix-recorder/app.bundle.min.js"
+            crossorigin onload="onWixRecorderLoaded()"></script>
+
+    <script src="//static.parastorage.com/services/cookie-sync-service/1.347.20/embed-cidx.bundle.min.js"></script>
+    <script src="//static.parastorage.com/services/tag-manager-client/1.920.0/hostTags.bundle.min.js"></script>
+    <div id="root"><span data-newcolorsbranding="true" class="wds_1_179_1_newColorsBranding__root wds_1_179_1_madefor__madefor"><div data-hook="app"><div data-hook="tool-bar" class="sbWfkE"><div class="Mn4893"><div class="bZOLNF"><a data-hook="logo" href="/" class="nHuSJZ"><span class="AV8G6s">wix.com</span></a></div><div class="wKSaYa"><button data-hook="desktop-view" class="is65hl sdsgLW"><span class="XFdFwl">mostrar versión de computadora</span></button><hr class="hS1yv1"/><button data-hook="mobile-view" class="fB70N2"><span class="XFdFwl">mostrar versión móvil</span></button></div></div><div class="TYXuEX"><div class="RyxoSg"><p data-hook="tool-bar-title" class="VaexPL">Haz clic en editar y crea tu propio sitio web increíble</p><a data-hook="info-view" class="bggdgE" tabindex="0" role="dialog" href="#">Saber más</a><a class="Ydu4WK" data-hook="editor-link" href="https://manage.wix.com/edit-template/from-intro?originTemplateId=c66d1597-af8a-4a53-b4da-7e9b4265c950&amp;editorSessionId=06327557-8ded-4783-bddb-c95c44fb5435" target="_blank" tabindex="0">Editar este sitio</a></div></div></div><div data-hook="template-demo" class="CJ4D6R"><div data-hook="desktop-view" class="Woz8P7"><iframe data-hook="desktop-iframe" src="https://www.wix.com/templateses/constructioncompes" title="Compañía de construcción" width="100%" height="100%" class="eZTjsa"></iframe></div></div><div data-hook="info-pop-up" class="M05QSQ"><div class="E0wHmq"><button data-hook="card-close" class="eds_d0"><span class="ydbrSa">cerrar</span></button><div class="qLnKwP"><h1 data-hook="card-title" class="PHJvhr">Compañía de construcción - Plantilla web</h1><div class="CEjC4K"><h3 data-hook="card-good-for-title" class="xqspyG">Bueno para:</h3><p data-hook="card-good-for" class="gsbPc5">Compañías de construcción, empresas de mantenimiento y firmas de ingeniería </p></div><div class="CEjC4K"><h3 class="xqspyG">Descripción:</h3><p data-hook="card-description" class="gsbPc5">Construye una página web tan sólida como las construcciones a las que tu empresa se dedica día a día. Atractiva y profesional, posee un área para promover servicios y páginas de portafolio donde explicar proyectos concluidos y atraer nuevos clientes. Simplemente haz clic para comenzar a editarla y promueve tu presencia online hoy mismo. </p></div></div><div class="KiqsRq"><a data-hook="card-editor-url" class="XpwCp3 sKD7vO" target="_blank" href="https://manage.wix.com/edit-template/from-intro?originTemplateId=c66d1597-af8a-4a53-b4da-7e9b4265c950&amp;editorSessionId=06327557-8ded-4783-bddb-c95c44fb5435">Editar ahora</a></div></div></div></div></span></div>
+    <script>
+        window.__BASEURL__ = "https:\u002F\u002Fes.wix.com\u002Fwebsite-template\u002Fview\u002Fhtml\u002F";
+        window.__INITIAL_I18N__ = {"locale":"es","resources":{"errorPage.templatesLinkText":"Plantillas","template.viewer.page.title":"{{- title}} plantilla web | WIX","template.viewer.studio.page.title":"Plantilla adaptativa {{- title}} | Wix Studio","template.viewer.studio.page.description":"Esta plantilla de {{- title}} está lista para que la personalices según tus necesidades. Haz clic en Editar plantilla y pruébala en cualquier dispositivo","template_button_label":"Editar página web","template_seeFeatures_label":"Ver todas las funciones","template_expand_examples_text":"Genial para:","template_expand_header":"Funciones de la plantilla","template.viewer.title":"Haz clic en editar y crea tu propio sitio web increíble","template.viewer.saveTemplate.button":"Guardar plantilla","template.viewer.edit.button":"Editar este sitio","template.viewer.read.more":"Saber más","template.viewer.back":"Volver","template.viewer.info.edit.button":"Editar ahora","template.viewer.price":"Precio:","template.viewer.info.title":"{{- title}} - Plantilla web","template.viewer.info.goodFor":"Bueno para:","template.viewer.info.description":"Descripción:","template.viewer.info.desktop.only.notice":"Edita esta plantilla entrando a Wix.com en tu computador, donde puedes personalizar todas nuestras hermosas plantillas.","template.viewer.see.all.templates":"Ver todas las plantillas","template.viewer.seeAllExpressions":"See all expressions","template.viewer.goToBiggerScreen":"Para comenzar a diseñar, ve a un dispositivo de escritorio.","template.viewer.getStarted":"Empezar","template.viewer.startNow":"Empezar","template.viewer.features":"Funciones","template.viewer.allFeatures":"Todas las funciones","template.viewer.expressions":"Expressions","template.viewer.tutorials":"Tutoriales","template.viewer.updatesAndReleases":"Actualizaciones y lanzamientos","template.viewer.comingSoon":"Próximamente","template.viewer.academy":"Academia","template.viewer.editTemplate":"Editar plantilla","template.viewer.header.backToTemplates":"Volver a Plantillas","template.viewer.hint.copyPaste.title":"Consejo: ","template.viewer.hint.copyPaste.text":"Puedes guardar las secciones que te gusten de esta plantilla para reutilizarlas en tus sitios de Wix Studio. ","template.viewer.hint.copyPaste.urlTitle":"Leer más","a11y.desktop.button":"mostrar versión de computadora","a11y.mobile.button":"mostrar versión móvil","a11y.close.popup.button":"cerrar","toolbar.tooltip.desktop":"1001px y más","toolbar.tooltip.tablet":"751 hasta 1000px","toolbar.tooltip.mobile":"320 hasta 750px","errorPage.4xx.title":"No pudimos encontrar la plantilla que estabas buscando","errorPage.5xx.title":"No pudimos cargar nuestra plantilla","errorPage.subTitle":"Error: {{- code }}","errorPage.4xx.details":"Intenta buscar otra plantilla \u003Clink\u003Eaquí\u003C\u002Flink\u003E.","errorPage.5xx.details":"Un problema técnico temporal nos impidió cargar esta página. Espera unos minutos y vuélvelo a intentar.","errorPage.5xx.action":"Actualizar","seo.breadcrumbs.home":"Wix.com","seo.breadcrumbs.websiteTemplates":"Plantillas web","seo.breadcrumbs.studioTemplates":"Plantillas de Wix Studio","seo.breadcrumbs.template":"Plantilla web {{- title}}","template.viewer.v2.edit.button":"Editar este sitio","template.viewer.v2.demo.button":"Ver sitio de demostración","template.viewer.v2.template.info":"Esta plantilla es ideal para","template.viewer.v2.template.details":"Acerca de esta plantilla","template.viewer.v2.template.apps":"Apps principales","template.viewer.v2.template.apps.description":"Esta plantilla incluye las siguientes funciones:","template.viewer.v2.demo.template.name":"Plantilla web: {{name}}","template.viewer.v2.template.likeThis.title":"Plantillas como esta","template.viewer.v2.template.button.edit":"Editar","template.viewer.v2.template.button.view":"Ver","template.viewer.v2.template.button.view_details":"View Details","template.viewer.v2.header.description":"Haz clic en editar y crea tu propio sitio web increíble","template.viewer.v2.demo.template.view":"Ver en pantalla completa","APP_PORTFOLIO":"Wix Portafolio","APP_PORTFOLIO_DESCRIPTION":"Muestra tu trabajo en un portafolio que se destaque","APP_DONATIONS":"Wix Donaciones","APP_DONATIONS_DESCRIPTION":"Recibe y administra donaciones online","APP_EVENTS":"Wix Eventos","APP_EVENTS_DESCRIPTION":"Crea eventos, vende entradas y monitorea las RSVP","APP_BOOKINGS":"Wix Bookings","APP_BOOKINGS_DESCRIPTION":"Motiva a los clientes para que programen citas en tu sitio","APP_BLOG":"Wix Blog","APP_BLOG_DESCRIPTION":"Escribe entradas y comparte tus ideas para generar tráfico","APP_MENUS":"Menús de Wix Restaurants","APP_MENUS_DESCRIPTION":"Crea un menú y muéstralo en tu sitio web","APP_ORDERS":"Pedidos de Wix Restaurants","APP_ORDERS_DESCRIPTION":"Acepta pedidos online de recogida en persona y envío a domicilio","APP_RESERVATIONS":"Wix Reservas de mesas","APP_RESERVATIONS_DESCRIPTION":"Acepta reservas a toda hora directamente desde tu sitio","APP_STORES":"Wix Stores","APP_STORES_DESCRIPTION":"Vende tus productos o renueva los artículos que ofreces","APP_PLANS":"Wix Planes de precios","APP_PLANS_DESCRIPTION":"Vende suscripciones y membresías","APP_PROGRAMS":"Wix Programas online","APP_PROGRAMS_DESCRIPTION":"Crea y vende programas de varios pasos","APP_HOTELS":"Wix Hotels","APP_HOTELS_DESCRIPTION":"Administra y haz crecer tu negocio de hotelería","APP_CHAT":"Wix Chat","APP_CHAT_DESCRIPTION":"Permite que los visitantes de tu sitio se comuniquen contigo en todo momento","APP_FORMS":"Wix Formularios","APP_FORMS_DESCRIPTION":"Capta clientes potenciales, cobra pagos y mucho más","APP_INSTAGRAM":"Feed de Instagram (nuevo)","APP_INSTAGRAM_DESCRIPTION":"Muestra tus fotos y videos de Instagram","APP_VIDEO":"Wix Video","APP_VIDEO_DESCRIPTION":"Comparte, transmite y vende tus videos","APP_MUSIC":"Wix Música","APP_MUSIC_DESCRIPTION":"Transmite y vende tu música sin comisiones","APP_GROUPS":"Wix Grupos","APP_GROUPS_DESCRIPTION":"Dirige y administra comunidades online monetizables","APP_FILE_SHARE":"Wix Archivos compartidos","APP_FILE_SHARE_DESCRIPTION":"Crea una biblioteca de archivos compartidos para los miembros del sitio","thankYou.error.title":"Lo sentimos, algo falló.","thankYou.error.description":"Hubo un problema técnico de nuestra parte. Vuelve a elegir tu plantilla e intenta guardarla nuevamente.","thankYou.error.cta":"Ver plantillas","thankYou.wixOwnerAppBanner.cta":"Instalar","thankYou.wixOwnerAppBanner.description":"Obtén la app Wix, crea y administra tu sitio estés donde estés","thankYou.success.title":"La plantilla que guardaste se envió a tu email","thankYou.success.alternativeTitle":"Tu plantilla se enviará a tu email en breve","thankYou.success.description":"Ábrela desde un dispositivo de escritorio para comenzar a crear tu sitio.","template.newMobileFlow.preview.saveTemplate":"Guardar plantilla"}};
+        window.__INITIAL_STATE__ = {"templatesLikeThis":[{"template":{"templateId":"5c20aa36-4860-4ad0-80a9-93197375d665","siteId":"ba762c02-9301-4026-b058-fd11e3e2f125","metaSiteId":"6e48bb27-df86-49d7-a258-04f243af5d3a","title":"Instaladores de paneles solares","description":"Tu negocio se caracteriza por la profesionalidad y fiabilidad, así que es importante crear una presencia online que refleje estos valores. Con un estilo limpio y estructurado y las imágenes grandes y vívidas, esta plantilla hace eso y más. Agrega detalles sobre tus servicios para mostrar a los clientes potenciales por qué deberían elegirte, y anímalos a pedir un presupuesto a través del formulario integrado. ¿Quieres generar clientes potenciales valiosos y expandir tu negocio? Haz clic en Editar para empezar.","goodFor":"Servicios de construcción, empresas de mantenimiento y firmas de ingeniería","assets":[{"type":"DESKTOP","url":"\u002Ftemplates\u002Fimage\u002F8d43442b344428a891d8b4c9f9965676ad00a577e7d859033958c34ba8483af21675168177974.jpg","absoluteUrl":"https:\u002F\u002Fimages-wixmp-530a50041672c69d335ba4cf.wixmp.com\u002Ftemplates\u002Fimage\u002F8d43442b344428a891d8b4c9f9965676ad00a577e7d859033958c34ba8483af21675168177974.jpg","alt":""},{"type":"DESKTOP_16X9","url":"\u002Ftemplates\u002Fimage\u002Fe35b562eee838b921570c3dae6449c17df5c0a7bc2841e022a0597ebff45336d1675168218145.jpg","absoluteUrl":"https:\u002F\u002Fimages-wixmp-530a50041672c69d335ba4cf.wixmp.com\u002Ftemplates\u002Fimage\u002Fe35b562eee838b921570c3dae6449c17df5c0a7bc2841e022a0597ebff45336d1675168218145.jpg","alt":""},{"type":"MOBILE","url":"\u002Ftemplates\u002Fimage\u002F17862e18d66cb35ed881d034ceb2228dff17445bfbdb4719327bf929bde4e96c1675168242980.jpg","absoluteUrl":"https:\u002F\u002Fimages-wixmp-530a50041672c69d335ba4cf.wixmp.com\u002Ftemplates\u002Fimage\u002F17862e18d66cb35ed881d034ceb2228dff17445bfbdb4719327bf929bde4e96c1675168242980.jpg","alt":""}],"slug":"3151","features":[{"featureId":"accessibility"}],"apps":[{"appDefId":"HtmlWeb"},{"appDefId":"ProvidedMailingService"},{"appDefId":"4b10fcce-732d-4be3-9d46-801d271acda9"},{"appDefId":"14ce1214-b278-a7e4-1373-00cebd1bef7c"},{"appDefId":"14271d6f-ba62-d045-549b-ab972ae1f70e"},{"appDefId":"CloudSiteExtension"},{"appDefId":"SiteMembers"},{"appDefId":"Clubs"},{"appDefId":"Contacts"}],"featuresDescription":"","templateBuilder":"Editor","templatePrice":"FREE","languagePreferences":{"cs":{"visible":true},"da":{"visible":true},"de":{"visible":true},"en":{"visible":true},"es":{"visible":true},"fr":{"visible":true},"hi":{"visible":true},"id":{"visible":true},"it":{"visible":true},"ja":{"visible":true},"ko":{"visible":true},"nl":{"visible":true},"no":{"visible":true},"pl":{"visible":true},"pt":{"visible":true},"ru":{"visible":true},"sv":{"visible":true},"th":{"visible":true},"tr":{"visible":true},"uk":{"visible":true},"vi":{"visible":true},"zh":{"visible":true}}},"metadata":{"resultType":"Vespa","score":0.38657528162002563}},{"template":{"templateId":"c890b338-5f7b-4081-bcc1-e450629766a3","siteId":"0ce5bfe5-3669-40d8-b89c-71db67fa6462","metaSiteId":"7aa6d7f8-3c6c-4f7e-844f-2f168039f09b","title":"Diseñador(a) de interiores","description":"Esta elegante y magnífica plantilla es perfecta para tu empresa de interiorismo. Es fácil de editar y te permite mostrar tus proyectos, compartir tu estilo y agregar las opiniones más reseñables de tus clientes. ¡En muy pocos pasos tu empresa tendrá presencia online!","goodFor":"Diseñadores de interiores, arquitectos, portafolios y otros profesionales creativos.","assets":[{"type":"DESKTOP","url":"\u002Ftemplates\u002Fimage\u002F791c9ba779bafa36ca5c6880168eb49b2c1196f210a891998614cc3e9ef8c3da1620647719220.jpg","absoluteUrl":"https:\u002F\u002Fimages-wixmp-530a50041672c69d335ba4cf.wixmp.com\u002Ftemplates\u002Fimage\u002F791c9ba779bafa36ca5c6880168eb49b2c1196f210a891998614cc3e9ef8c3da1620647719220.jpg","alt":""},{"type":"DESKTOP_16X9","url":"\u002Ftemplates\u002Fimage\u002F9b5550f2783f3d2f291c29a016c547999203c5b7dc599a0729455e7925bdd0541620647743483.jpg","absoluteUrl":"https:\u002F\u002Fimages-wixmp-530a50041672c69d335ba4cf.wixmp.com\u002Ftemplates\u002Fimage\u002F9b5550f2783f3d2f291c29a016c547999203c5b7dc599a0729455e7925bdd0541620647743483.jpg","alt":""},{"type":"MOBILE","url":"\u002Ftemplates\u002Fimage\u002Ff8364a6b4bbe541a8f475e66c03bcedcc88936b79f7f6b5492f58463788f94a81620647763963.jpg","absoluteUrl":"https:\u002F\u002Fimages-wixmp-530a50041672c69d335ba4cf.wixmp.com\u002Ftemplates\u002Fimage\u002Ff8364a6b4bbe541a8f475e66c03bcedcc88936b79f7f6b5492f58463788f94a81620647763963.jpg","alt":""},{"type":"VIDEO","url":"\u002Ftemplates\u002Fvideo\u002Foriginal\u002Fa5f90fc5f13bcf1577c84bc3ddcc5e47d2533230ca16851b0a085ec4bc4051801620647988521.mp4","absoluteUrl":"https:\u002F\u002Fimages-wixmp-530a50041672c69d335ba4cf.wixmp.com\u002Ftemplates\u002Fvideo\u002Foriginal\u002Fa5f90fc5f13bcf1577c84bc3ddcc5e47d2533230ca16851b0a085ec4bc4051801620647988521.mp4","alt":""}],"slug":"2084","features":[],"color":{"color1":"white","colorStyle":"bright"},"layout":{"layout1":"framed"},"apps":[{"appDefId":"14ce1214-b278-a7e4-1373-00cebd1bef7c"},{"appDefId":"AppBuilder"},{"appDefId":"139ef4fa-c108-8f9a-c7be-d5f492a2c939"},{"appDefId":"4b10fcce-732d-4be3-9d46-801d271acda9"},{"appDefId":"14271d6f-ba62-d045-549b-ab972ae1f70e"},{"appDefId":"Contacts"},{"appDefId":"HtmlWeb"},{"appDefId":"SiteMembers"},{"appDefId":"ProvidedMailingService"},{"appDefId":"CloudSiteExtension"},{"appDefId":"14517e1a-3ff0-af98-408e-2bd6953c36a2"}],"featuresDescription":"","templateBuilder":"Editor","templatePrice":"FREE","languagePreferences":{"cs":{"visible":true},"da":{"visible":true},"de":{"visible":true},"en":{"visible":true},"es":{"visible":true},"fi":{"visible":true},"fr":{"visible":true},"hi":{"visible":true},"id":{"visible":true},"it":{"visible":true},"ja":{"visible":true},"ko":{"visible":true},"nl":{"visible":true},"no":{"visible":true},"pl":{"visible":true},"pt":{"visible":true},"ru":{"visible":true},"sv":{"visible":true},"th":{"visible":true},"tr":{"visible":true},"uk":{"visible":true},"vi":{"visible":true},"zh":{"visible":true}}},"metadata":{"resultType":"Vespa","score":0.3797016143798828}},{"template":{"templateId":"84f747cb-95c8-4bdb-9ae3-ab37aa6ee9e4","siteId":"8c9f9ce9-554b-497d-8c64-86bbb4829a69","metaSiteId":"b5d792d0-9a26-4036-900d-a472680eab24","title":"Fotógrafo(a) de bienes raíces","description":"Esta plantilla moderna y bien organizada tiene todo lo que necesitas para optimizar tu carrera de fotografía. Organiza tu portafolio de trabajo en categorías, y aprovecha la página de inicio visualmente atractiva para destacar tu mejor trabajo. Incluye un área exclusiva para tus clientes con Wix Álbumes de fotos y haz a clic en \"Publicar\" para que tu sitio esté en línea hoy mismo.","goodFor":"Fotógrafos de bienes raíces, fotógrafos generales y estudios de fotografía","assets":[{"type":"DESKTOP","url":"\u002Ftemplates\u002Fimage\u002F438fc30e7303945e3b5997cdbdf4e04306cdff666c9a1c9ed8503b97154ce1e91656508551265.jpg","absoluteUrl":"https:\u002F\u002Fimages-wixmp-530a50041672c69d335ba4cf.wixmp.com\u002Ftemplates\u002Fimage\u002F438fc30e7303945e3b5997cdbdf4e04306cdff666c9a1c9ed8503b97154ce1e91656508551265.jpg","alt":""},{"type":"DESKTOP_16X9","url":"\u002Ftemplates\u002Fimage\u002F930d1dac89e70949ddb5c6cde4e7cb31460561750bd2c738a6437fae01e085c01656508568311.jpg","absoluteUrl":"https:\u002F\u002Fimages-wixmp-530a50041672c69d335ba4cf.wixmp.com\u002Ftemplates\u002Fimage\u002F930d1dac89e70949ddb5c6cde4e7cb31460561750bd2c738a6437fae01e085c01656508568311.jpg","alt":""},{"type":"MOBILE","url":"\u002Ftemplates\u002Fimage\u002F4de54f9ea6869701f6e3467e4b4a5b34f64a4551b48c51caba071cc24ed0461f1656508581982.jpg","absoluteUrl":"https:\u002F\u002Fimages-wixmp-530a50041672c69d335ba4cf.wixmp.com\u002Ftemplates\u002Fimage\u002F4de54f9ea6869701f6e3467e4b4a5b34f64a4551b48c51caba071cc24ed0461f1656508581982.jpg","alt":""}],"slug":"2133","features":[],"color":{"color1":"white","colorStyle":"bright"},"layout":{"layout1":"inline","layout2":"grid"},"apps":[{"appDefId":"Contacts"},{"appDefId":"HtmlWeb"},{"appDefId":"4b10fcce-732d-4be3-9d46-801d271acda9"},{"appDefId":"13ff8629-c1fc-e289-e81f-bc8c8968e9d6"},{"appDefId":"14ce1214-b278-a7e4-1373-00cebd1bef7c"},{"appDefId":"SiteMembers"},{"appDefId":"14271d6f-ba62-d045-549b-ab972ae1f70e"},{"appDefId":"CloudSiteExtension"},{"appDefId":"ProvidedMailingService"},{"appDefId":"147ab90e-91c5-21b2-d6ca-444c28c8a23b"}],"featuresDescription":"","templateBuilder":"Editor","templatePrice":"FREE","languagePreferences":{"cs":{"visible":true},"da":{"visible":true},"de":{"visible":true},"en":{"visible":true},"es":{"visible":true},"fi":{"visible":true},"fr":{"visible":true},"hi":{"visible":true},"it":{"visible":true},"ja":{"visible":true},"ko":{"visible":true},"nl":{"visible":true},"no":{"visible":true},"pl":{"visible":true},"pt":{"visible":true},"ru":{"visible":true},"sv":{"visible":true},"th":{"visible":true},"tr":{"visible":true},"uk":{"visible":true},"vi":{"visible":true},"zh":{"visible":true}}},"metadata":{"resultType":"Vespa","score":0.3779982328414917}}],"viewMode":"desktop","isInfoShown":false,"isEditButtonHidden":false,"template":{"title":"Compañía de construcción","description":"Construye una página web tan sólida como las construcciones a las que tu empresa se dedica día a día. Atractiva y profesional, posee un área para promover servicios y páginas de portafolio donde explicar proyectos concluidos y atraer nuevos clientes. Simplemente haz clic para comenzar a editarla y promueve tu presencia online hoy mismo. ","image":"\u002Ftemplates\u002Fimage\u002Fa47f03e7acc00f9a751b84ffaa23c5f779680c4df6e78b6b2c3c9b03dd67eb49.jpg","slug":"1734","lng":"es","languages":["cs","da","de","en","es","fr","hi","it","ja","ko","nl","no","pl","pt","ru","sv","th","tr","uk","vi","zh"],"templatePrice":"FREE","docUrl":"https:\u002F\u002Fwww.wix.com\u002Ftemplateses\u002Fconstructioncompes","editorUrl":"https:\u002F\u002Fmanage.wix.com\u002Fedit-template\u002Ffrom-intro?originTemplateId=c66d1597-af8a-4a53-b4da-7e9b4265c950&editorSessionId=06327557-8ded-4783-bddb-c95c44fb5435","goodFor":"Compañías de construcción, empresas de mantenimiento y firmas de ingeniería ","siteId":"b88778c9-0770-4f50-ae40-0dca8ba9dd8f","mobileImage":{"type":"MOBILE","url":"\u002Ftemplates\u002Fimage\u002F3d08f7de130c2506dbeb05a49897ed9221a5ecf84abe176384218a1a46c1ed09.jpg","absoluteUrl":"https:\u002F\u002Fimages-wixmp-530a50041672c69d335ba4cf.wixmp.com\u002Ftemplates\u002Fimage\u002F3d08f7de130c2506dbeb05a49897ed9221a5ecf84abe176384218a1a46c1ed09.jpg","alt":"mobile image"},"desktopImage":{"type":"DESKTOP","url":"\u002Ftemplates\u002Fimage\u002Fa47f03e7acc00f9a751b84ffaa23c5f779680c4df6e78b6b2c3c9b03dd67eb49.jpg","absoluteUrl":"https:\u002F\u002Fimages-wixmp-530a50041672c69d335ba4cf.wixmp.com\u002Ftemplates\u002Fimage\u002Fa47f03e7acc00f9a751b84ffaa23c5f779680c4df6e78b6b2c3c9b03dd67eb49.jpg","alt":"desktop image"},"metaSiteId":"c66d1597-af8a-4a53-b4da-7e9b4265c950","editorSessionId":"06327557-8ded-4783-bddb-c95c44fb5435","isResponsive":false,"isStudio":false,"templateId":"5379e347-83eb-478b-bd03-7b07b5e2f5bc","url":"https:\u002F\u002Fwww.wix.com\u002Ftemplateses\u002Fconstructioncompes","apps":[{"appDefId":"139ef4fa-c108-8f9a-c7be-d5f492a2c939"},{"appDefId":"14ce1214-b278-a7e4-1373-00cebd1bef7c"},{"appDefId":"141fbfae-511e-6817-c9f0-48993a7547d1"},{"appDefId":"14517e1a-3ff0-af98-408e-2bd6953c36a2"},{"appDefId":"Contacts"},{"appDefId":"SiteMembers"},{"appDefId":"ProvidedMailingService"},{"appDefId":"14271d6f-ba62-d045-549b-ab972ae1f70e"},{"appDefId":"HtmlWeb"}]},"activeExperiments":[],"config":{"locale":"es","dealerCmsTranslationsUrl":"\u002F\u002Fstatic.parastorage.com\u002Fservices\u002Fdealer-cms-translations\u002F1.7135.0\u002F","dealerLightboxUrl":"\u002F\u002Fstatic.parastorage.com\u002Fservices\u002Fdealer-lightbox\u002F2.0.260\u002F"},"userData":{"isLoggedIn":true,"profile":{"id":"c9a9c583-6764-4e53-aa5b-2b6a7223ed29"}}};
+        window.__BI__ = {"siteId":"b88778c9-0770-4f50-ae40-0dca8ba9dd8f","originUrl":"https:\u002F\u002Fes.wix.com\u002Fwebsite\u002Ftemplates","editorSessionId":"06327557-8ded-4783-bddb-c95c44fb5435"};
+        window.__DEVICE__ = "desktop";
+        window.__CONSENT_POLICY__ = {"essential":true,"functional":true,"analytics":true,"advertising":true,"dataToThirdParty":true};
+    </script>
+
+    <script src="//static.parastorage.com/unpkg/react@18.2.0/umd/react.production.min.js" crossorigin></script>
+    <script src="//static.parastorage.com/unpkg/react-dom@18.2.0/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="//static.parastorage.com/services/cookie-consent-policy-client/1.866.0/app.bundle.min.js"></script>
+
+    
+      <script src="//static.parastorage.com/services/dealer-lightbox/2.0.260/dealer-lightbox.bundle.min.js"></script>
+    
+
+    <script src="//static.parastorage.com/services/marketing-template-viewer/1.2489.0/app.bundle.min.js"></script>
+  </body>
 </html>
